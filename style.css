@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  background-color: #dddd;
+}
+*:focus::placeholder {
+  opacity: 0;
+}
+form {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 0 10px;
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: capitalize;
+}
+h1 {
+  text-align: center;
+  margin: 0 auto 20px 0;
+  font-size: 50px;
+  letter-spacing: -2px;
+  color: #757575;
+}
+input:not(:last-of-type),
+textarea {
+  margin: 0 auto 10px auto;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 20px 10px 35px;
+  text-transform: capitalize;
+  border: 2px solid #1da1f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"] {
+  border: none;
+  background-color: #1da1f2;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0;
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+textarea {
+  height: 150px;
+  resize: none;
+  padding: 10px 20px 10px 10px;
+}
+input[type="submit"]:hover {
+  background-color: red;
+}
+form i:not(:last-of-type) {
+  position: relative;
+  top: -38px;
+  left: 2%;
+  display: flex;
+  align-items: baseline;
+  height: 0;
+  color: #999;
+}
+form i:last-of-type {
+  position: relative;
+  top: -29px;
+  left: 6px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form span {
+  position: relative;
+  font-size: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  height: 0;
+  color: red;
+  top: -38px;
+  right: 10px;
+  display: none;
+}
+form span:last-of-type {
+  align-items: end;
+  top: -118px;
+}
+form p {
+  font-family: cursive;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 12px;
+  color: red;
+}
+form .alert {
+  display: none;
+}
+form .success {
+  text-align: center;
+  margin: 0 auto 10px auto;
+  font-weight: normal;
+  font-family: emoji;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  background-color: #096;
+  color: white;
+}
